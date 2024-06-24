@@ -82,6 +82,12 @@ public class EmployeeServiceImple implements EmployeeService {
 	
 	}
 
+	@Override
+	public List<Employee> empCity(String city) {
+      List<Employee> list=employeeRepo.getEmpByCity(city);
+		return list;
+	}
+
 	
 	
 }

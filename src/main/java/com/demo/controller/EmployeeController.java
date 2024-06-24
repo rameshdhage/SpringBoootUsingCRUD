@@ -103,6 +103,15 @@ public class EmployeeController {
 	}
 
 	
+	@GetMapping("/empcitysalarybase/{city}")
+	 public List<Employee> empCityByDESCOrder(@PathVariable String  city){
+		 
+		List<Employee> emp= employeeServiceImple.empCity(city);
+		
+		return emp;
+	 }
+	
+	
 	
 }
 

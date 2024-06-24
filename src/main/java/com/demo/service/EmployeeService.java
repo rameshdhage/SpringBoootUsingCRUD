@@ -10,11 +10,14 @@ public interface EmployeeService  {
 	
 	public List<Employee> fechAll();
 	
+	
+	public List<Employee> empCity(String city);
 	public List<Employee> employeeByCity(String city);
 	
 	public List<Employee> employeeByCountry(String country);
 	
 	public List<Employee> employeeByName(String name);
+	
 	
 	public Employee fetchById(int id);
 	
